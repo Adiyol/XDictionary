@@ -31,8 +31,8 @@ function App() {
     <>
     <h1>Dictionary App</h1>
     <input type="text" value={searchText} onChange={(e) => setSearchText(e.target.value)}/><button onClick={handleSearch}>Search</button>
-    <p>Definition: </p>
-    {meaningText ? meaningText : null}
+    <p>Definition:</p>
+    <p>{meaningText ? meaningText : null}</p>
     </>
   )
 }
